@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>
+    
+  如何优雅的排版 - 
+  
+
+  </title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="asset/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="atom.xml" rel="alternate" title="" type="application/atom+xml">
+  <script src="asset/js/modernizr-2.0.js"></script>
+  <script src="asset/js/jquery.min.js"></script>
+  <script src="asset/highlightjs/highlight.pack.js"></script>
+  <link href="asset/highlightjs/styles/solarized_light.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <style type="text/css">
+  .cat-children-p{ padding: 6px 0px;}
+  .hljs{background: none;}
+  </style>
+  <script type="text/javascript">
+  var isAddSildbar = true;
+  </script>
+  <script src="asset/js/octopress.js" type="text/javascript"></script>
+</head>
+<script type="text/javascript">
+//链接新开窗口
+function addBlankTargetForLinks () {
+  $('a[href^="http"]').each(function(){
+      $(this).attr('target', '_blank');
+  });
+}
+$(document).ready(function(event) {
+  addBlankTargetForLinks();
+});
+</script>
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="index.html"></a></h1>
+  
+    <h2></h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://89ming.github.io/archives.html" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+
+  <li id=""><a target="_self" href="index.html">home</a></li>
+
+  <li id=""><a target="_self" href="blog.html">blog</a></li>
+
+  <li id=""><a target="_self" href="about.html">about</a></li>
+
+  <li id=""><a target="_self" href="beauty.html">beauty</a></li>
+
+  <li id=""><a target="_self" href="archives.html">Archives</a></li>
+
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+ 
+<div>
+	<article class="hentry" role="article">
+	<header>
+			  	<h1 class="entry-title">如何优雅的排版</h1>
+				<p class="meta"><time datetime="2019-05-02T14:21:14+08:00" pubdate data-updated="true">2019/5/2</time></p>
+			 </header>
+		  	<div class="entry-content">
+			  	<h4 id="toc_0">摘自—数字游民部落官网：JARODISE.COM</h4>
+
+<p>自媒体排版进化论 – 如何实现多平台的一键式排版-插图-发布流程（2018MAC版）</p>
+
+<span id="more"></span><!-- more -->
+
+<p>前言<br/>
+有关微信公众号排版与内容发布我之前写过两篇文章，在第一篇《微信排版进化论》中，我介绍了自己如何开始尝试用Markdown这种写作方式取代传统的富文本排版，并且成倍地提升了排版效率和美观程度。在第二篇文章《如何优雅地在微信公众号，知乎专栏和WordPress三个平台上发文章》里，我则着重介绍了如何运用BeePress这款WordPress插件实现知乎、微信公众号和WordPress博客三个平台在不需要重复插图的情况下同步发文的方法，然而这篇文章中介绍的方法还有一点不完美，因为这个流程需要在知乎编辑器中进行最终的图文编辑。<br/>
+作为一个工具控，我当然不能容忍凑合，于是经过近几个月的研究和实践，我终于找了一个更加优雅的在微信公众号，知乎（包括知乎问答和专栏）和WordPress三个平台进行一次插图，一键排版的好办法。经过实测，这个方法同样适用于新版的豆瓣日记，因此如果你平时有在这几个平台发文的刚需，并且不想重复插图，重复排版，那么今天这篇文章里提供的方法会帮你节省大量的时间和精力。<br/>
+准备工作<br/>
+要实现上述的单次插图一键排版发文，首先你需要准备下面的几个关键工具：</p>
+
+<ol>
+<li>一台Mac（因为我们下面使用的编辑器是Mac Only）。</li>
+<li>MWeb，这是一款国产的Markdown文本编辑器，也是我本人目前的主力码字工具，非常可惜目前只有Mac版（可在某宝数码荔枝上面买到正版，建议买正版支持作者）。</li>
+<li>一个七牛云的账号，直接到qiniu.com免费注册即可，每个账号有10G的免费存储空间，对于一般的公众号足够用。</li>
+<li>花10分钟时间学习Markdown的基本语法。一般而言我觉得会3级标题和加粗的标记就已经足够了。至于Markdown到底是什么，语法规则是怎么样的，不在本文的讨论范畴之内，网上有大量的小白教程，我相信你可以自行解决。<br/>
+参考链接：<br/>
+Markdown——入门指南<br/>
+1.设置七牛云图床<br/>
+这个步骤略微繁琐，但是你按照我下面的方法按步骤来操作即可，一劳永逸：<br/>
+首先打开MWeb，点击上方Menu Bar的MWeb-Preferences，进入首选项设置界面，然后点击首选项界面上方的Publishing进入发布方式设置，你会看到如下界面，其中窗口下半部分的Local Images Upload Services就是图床设置选项。<br/>
+我们看到左侧有很多已经嵌入Mweb的图床服务，这里不用考虑太多，直接点击qiniu.com，你会进入接下来这个窗口，让你填入一些图床的接口信息:<br/>
+看到这些你肯定会一头雾水，没关系，把这个窗口留着别动，接下来我们就要进入七牛云的网站去把这些要填写的信息都挨个找出来，然后再回来填写。<br/>
+首先用你在准备工作中已经注册号的七牛账号登录进入七牛云的管理控制台页面，这时候你需要做的第一件事是添加服务，如下图所示，七牛云提供很多形式的云服务，这里我们选择“对象存储”，点击立即添加：<br/>
+进入如下页面，这里我们只需给我们要添加的空间自定义一个名字，区域选“华北”（也可以选其他，但是为了接下来解释方便起见我们选华北），访问控制选择“公开空间”，然后点击“确定创建”。这样，我们就创建了一个图床存储空间，并来到如下界面，<br/>
+我们需要在这里把上面图中测试域名下面的这个域名记录下来，然后点击页面右上角的个人面板，找到“密钥管理”，点击进入：<br/>
+来到密钥管理界面后，我们看到了AK和SK这两行长长的密码，把它们分别记录下来：<br/>
+至此，我们已经收集完成了所有必须的图床接口信息，这时候让我们再次回到刚刚打开的MWeb图床添加窗口，将刚才收集到的关键信息逐一填写进去：<br/>
+Name和Bucket Name，直接填写你刚刚为你的七牛云空间设定的名字就可以。API URL，选择<a href="http://up-z1.qiniup.com%EF%BC%88%E5%AF%B9%E5%BA%94%E6%88%91%E4%BB%AC%E5%88%9A%E6%89%8D%E8%AE%BE%E7%BD%AE%E7%9A%84%E5%8D%8E%E5%8C%97%E5%8C%BA%E5%9F%9F%EF%BC%89%E3%80%82">http://up-z1.qiniup.com（对应我们刚才设置的华北区域）。</a> Access Key和Secret Key就是我们刚刚记录下的两长串密码，对应填入即可。最后填入Image URL Prefix，也就是我们刚刚记录下的那串域名，填入的时候需要在前面加上http:// 。下面的Image URL Suffix直接留空不用填。在最下面选项打对勾。然后点Validate按钮进行测试，这时候会跳出一个文件选框，你随便从电脑上选一个图片文件上传，如果跳出了下面的Success对话框，说明你的设置成功了：<br/>
+2.为MWeb设定Markdown的CSS渲染样式<br/>
+如果你已经熟悉了Markdown的一些基本常识，就知道Markdown跟富文本最基本的区别就是写作的时候仅仅对文字用一些脚本符号进行相关的标记，并不会进行任何格式的渲染，这样有助于写作者更加高效集中的完成写作任务，而后面美化和格式化的任务，则需要交给CSS了，CSS具体是什么我在这里不解释，你可以把它当成一个皮肤的概念，只不过这个皮肤是由一些代码规则组成的。准备好一套CSS脚本，对你写好文本中的Markdown标记进行渲染，就能达到一键美化排版的神奇效果。所以，接下来我们要做的工作就是要为MWeb设定一套日后用于发布微信公众号的CSS渲染样式。<br/>
+再次进入MWeb的首选项，点击Themes，进入如下界面：<br/>
+在这个界面找到 Preview CSS这一栏，点击旁边的Edit按钮，这时候会打开一个包含CSS文件的文件夹，我们需要做的就是把这个名为sample-css的CSS文件编辑成为我们日后想要渲染成的样子，跟我在之前两篇文章里提到的Markdown Here的渲染CSS其实是一个道理，如果你已经在使用Markdown Here并且已经有一套自己的渲染CSS脚本的话，那么这里只需要把那套脚本复制粘贴到这个CSS文件，替换掉原有的格式即可。如果你还没有的话，那么可以使用这套由半撇私塾制作的微信公众号CSS模板，也是我个人目前正在使用的一套模板，你可以通过下面的链接进入Github找到模板的源码：
+<a href="https://jarodise.com/css">https://jarodise.com/css</a>
+基本上这套代码可以直接拿来使用，如果你觉得一些地方不满意的话也可以在这个基础上进行简单的修改，例如字号，颜色什么的，不过这个可能需要你有一点HTML/CSS的基础，其实也不是很难。<br/>
+完成了这一步，前期设置工作就大功告成了，这部分工作你只需要做这一次，一劳永逸。接下来编辑与发布的工作就很轻松了。<br/>
+3.编辑与发布<br/>
+我们在MWeb里可以非常优雅地使用Markdown方式进行文本的写作，并且可以使用拖拽的方式进行插图, 比如我下面用Markdown写了一篇示例文章，用Markdown标记了一级标题，二级标题和引用等格式，并且添加了一张图片，如下图所示：<br/>
+这时候，如果你想看渲染后的预览效果，只需要点击上方工具栏里面的“眼镜框”预览按钮，渲染效果就会展示在你眼前，同时这也是你后面发布微信公众号的最终排版效果：<br/>
+那么我们如何将在MWeb里面编辑好的文章发布到微信公众号和知乎等平台呢？首先，我们需要将插到文章的图片上传到之前设置好的七牛图床上，这一步非常关键，因为没有这一步，我们就无法实现一次插图，多平台发文的便利，这也是我们今天介绍这个发文流程的最核心意义所在。<br/>
+图文编辑好后，首先点击MWeb窗口右上角的发布按钮，出现下拉菜单后找到“Upload Local Images to”这一项，如下图所示：<br/>
+点击后进入如下图所示的图片上传页面：<br/>
+这个界面有几个注意事项，首先最上面的选框应该是我们刚刚在七牛图床设置步骤已经设置好的那个图床服务。确认之后就可以点击“Upload Images”按钮进行上传了，上传的过程中你会发现每张图片后面的Remote字样后随着图片上传进程会出现一串网址，这就是你的图片在云端的地址了。上传完成后，每一张插图都应该对应一个云端的网址。<br/>
+接下来的一步非常关键，也是之前困扰我很久的一步，那就是在完成上传之后，你需要点击窗口右下角的“New Document”按钮。点击过后，MWeb会重开一个窗口，显示出一个与你之前编辑图文相似的界面，唯一的不同是，这里的图片链接已经不是本地存储路径，而是替换过的云端网址了。这时候你需要做的是点击上方工具栏中的眼镜框按钮切换到预览模式，就大功告成了！<br/>
+发布时候你只需要将这个预览界面的图文复制，然后粘贴到相应平台的编辑器窗口即可。经我本人测试，这个方法目前适用于微信公众号，知乎/知乎专栏，新版豆瓣日记，今日头条等多个平台。<br/>
+结语<br/>
+之所以写这篇教程，是因为有太多的自媒体从业的朋友跟我抱怨，每次排版插图发布流程比码字还要浪费时间。相信学会了今天这篇教程里面的方法，你在日后的自媒体编辑工作中一定可以事半功倍，把更多的精力放在内容创作上面。<br/>
+本文系Jarod Zhang原创，如需转载请联系作者授权。坚持原创不易，你的打赏和转发是我继续创作的最大动力。<br/>
+数字游民部落致力于推广目前在全世界日益流行的数字游民（Digital Nomad）生活方式，和Lifestyle Design的方法和理念。<br/>
+摘自——————数字游民部落官网：JARODISE.COM</li>
+</ol>
+
+<h1 id="toc_1">2019-05-02 14:21:27 下午</h1>
+
+			</div>
+
+		
+	  
+		<footer>
+		 <p class="meta">
+
+			<strong>Categories:</strong>&nbsp; 
+			<span class="categories">
+			
+			    <a class='category' href='blog.html'>blog</a>&nbsp;
+			 
+			</span>
+		    </p>
+		    <p class="meta">
+		      
+		 </p>
+	    
+		<div class="sharing">
+		  
+          
+
+          
+
+		</div>
+
+	    <p class="meta">
+	    
+	        <a class="basic-alignment left" href="15568163246490.html" 
+	        title="Previous Post: 排骨火锅">&laquo; 排骨火锅</a>
+	    
+	    
+	        <a class="basic-alignment right" href="15567672788375.html" 
+	        title="Next Post: 小食堂的饭">小食堂的饭 &raquo;</a>
+	    
+	    </p>
+	  </footer>
+	</article>
+</div>
+ <aside class="sidebar"> 
+
+	<section>
+	  <h1>Categories</h1>
+	  <ul id="recent_posts">
+	  
+	      <li class="post">
+	        <a href="blog.html"><strong>blog&nbsp;(6)</strong></a>
+	        
+	        
+	        
+	      </li>
+	  
+	      <li class="post">
+	        <a href="beauty.html"><strong>beauty&nbsp;(2)</strong></a>
+	        
+	        
+	        
+	      </li>
+	   
+	  </ul>
+	</section>
+	<section>
+	  <h1>Recent Posts</h1>
+	  <ul id="recent_posts">
+	  
+	      
+		      <li class="post">
+		        <a href="15569887739483.html">都休班了宿舍空了</a>
+		      </li>
+	     
+	  
+	      
+		      <li class="post">
+		        <a href="15569439108961.html">超气质美女</a>
+		      </li>
+	     
+	  
+	      
+		      <li class="post">
+		        <a href="15569409222965.html">一个稀松平常的4点到12点班（8小时）</a>
+		      </li>
+	     
+	  
+	      
+		      <li class="post">
+		        <a href="15568627136960.html">美女鉴赏😍</a>
+		      </li>
+	     
+	  
+	      
+		      <li class="post">
+		        <a href="15568183574917.html">随想瞎几把写</a>
+		      </li>
+	     
+	  
+	      
+	  
+	      
+	  
+	      
+	   
+	  </ul>
+	</section>
+	
+</aside> </div></div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 -  -
+  <span class="credit">Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; Theme by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+
+  
+    
+
+
+
+
+</body>
+</html>
