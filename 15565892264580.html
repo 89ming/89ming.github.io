@@ -96,6 +96,8 @@ $(document).ready(function(event) {
 		  	<div class="entry-content">
 			  	<h4 id="toc_0"><mark>摘自—数字游民部落官网：JARODISE.COM</mark></h4>
 
+<p><mark>内容相对修改</mark></p>
+
 <p><img src="media/15565892264580/cover.jpg" alt="cove"/></p>
 
 <span id="more"></span><!-- more -->
@@ -109,12 +111,20 @@ $(document).ready(function(event) {
 <ol>
 <li>一台Mac（因为我们下面使用的编辑器是Mac Only）。</li>
 <li>MWeb，这是一款国产的Markdown文本编辑器，也是我本人目前的主力码字工具，非常可惜目前只有Mac版（可在某宝数码荔枝上面买到正版，建议买正版支持作者）。</li>
-<li>一个七牛云的账号，直接到qiniu.com免费注册即可，每个账号有10G的免费存储空间，对于一般的公众号足够用。</li>
-<li>花10分钟时间学习Markdown的基本语法。一般而言我觉得会3级标题和加粗的标记就已经足够了。至于Markdown到底是什么，语法规则是怎么样的，不在本文的讨论范畴之内，网上有大量的小白教程，我相信你可以自行解决。<br/>
+<li><del>一个七牛云的账号，直接到qiniu.com免费注册即可，每个账号有10G的免费存储空间，对于一般的公众号足够用</del>。</li>
+<li><mark>建议使用又拍云，最近（2019.05.05）七牛云通知测试网站试用期只有30天，而又拍云并不会收回测试网站</mark></li>
+<li><p>花<mark><strong>10分钟</strong></mark>时间学习<strong>Markdown的基本语法</strong>。<del>一般而言我觉得会3级标题和加粗的标记就已经足够了</del><mark>然而并不够</mark>。至于Markdown到底是什么，语法规则是怎么样的，不在本文的讨论范畴之内，网上有大量的小白教程，我相信你可以自行解决。<br/>
 参考链接：<br/>
-Markdown——入门指南<br/>
-1.设置七牛云图床<br/>
-这个步骤略微繁琐，但是你按照我下面的方法按步骤来操作即可，一劳永逸：<br/>
+<del>Markdown——入门指南</del><mark>百度或者谷歌下随处都是资料</mark></p></li>
+<li><p><del>设置七牛云图床</del><br/>
+<mark>相对来说设置 又拍云 十分简单</mark><br/>
+但有一个地方是特别需要注意的⚠️<br/>
+<img src="media/15565892264580/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202019-05-05%20%E4%B8%8B%E5%8D%881.29.56.jpg" alt="屏幕快照 2019-05-05 下午1.29.56"/></p>
+<blockquote>
+<p>在填写域名这一栏里千万不要落下<br/>
+<mark><code>http://或者https://</code>这个坑我爬了好久</mark></p>
+</blockquote>
+<p><del>这个步骤略微繁琐，但是你按照我下面的方法按步骤来操作即可，一劳永逸：<br/>
 首先打开MWeb，点击上方Menu Bar的MWeb-Preferences，进入首选项设置界面，然后点击首选项界面上方的Publishing进入发布方式设置，你会看到如下界面，其中窗口下半部分的Local Images Upload Services就是图床设置选项。<br/>
 我们看到左侧有很多已经嵌入Mweb的图床服务，这里不用考虑太多，直接点击qiniu.com，你会进入接下来这个窗口，让你填入一些图床的接口信息:<br/>
 看到这些你肯定会一头雾水，没关系，把这个窗口留着别动，接下来我们就要进入七牛云的网站去把这些要填写的信息都挨个找出来，然后再回来填写。<br/>
@@ -123,12 +133,12 @@ Markdown——入门指南<br/>
 我们需要在这里把上面图中测试域名下面的这个域名记录下来，然后点击页面右上角的个人面板，找到“密钥管理”，点击进入：<br/>
 来到密钥管理界面后，我们看到了AK和SK这两行长长的密码，把它们分别记录下来：<br/>
 至此，我们已经收集完成了所有必须的图床接口信息，这时候让我们再次回到刚刚打开的MWeb图床添加窗口，将刚才收集到的关键信息逐一填写进去：<br/>
-Name和Bucket Name，直接填写你刚刚为你的七牛云空间设定的名字就可以。API URL，选择<a href="http://up-z1.qiniup.com%EF%BC%88%E5%AF%B9%E5%BA%94%E6%88%91%E4%BB%AC%E5%88%9A%E6%89%8D%E8%AE%BE%E7%BD%AE%E7%9A%84%E5%8D%8E%E5%8C%97%E5%8C%BA%E5%9F%9F%EF%BC%89%E3%80%82">http://up-z1.qiniup.com（对应我们刚才设置的华北区域）。</a> Access Key和Secret Key就是我们刚刚记录下的两长串密码，对应填入即可。最后填入Image URL Prefix，也就是我们刚刚记录下的那串域名，填入的时候需要在前面加上http:// 。下面的Image URL Suffix直接留空不用填。在最下面选项打对勾。然后点Validate按钮进行测试，这时候会跳出一个文件选框，你随便从电脑上选一个图片文件上传，如果跳出了下面的Success对话框，说明你的设置成功了：<br/>
-2.为MWeb设定Markdown的CSS渲染样式<br/>
+Name和Bucket Name，直接填写你刚刚为你的七牛云空间设定的名字就可以。API URL，选择<a href="http://up-z1.qiniup.com%EF%BC%88%E5%AF%B9%E5%BA%94%E6%88%91%E4%BB%AC%E5%88%9A%E6%89%8D%E8%AE%BE%E7%BD%AE%E7%9A%84%E5%8D%8E%E5%8C%97%E5%8C%BA%E5%9F%9F%EF%BC%89%E3%80%82">http://up-z1.qiniup.com（对应我们刚才设置的华北区域）。</a> Access Key和Secret Key就是我们刚刚记录下的两长串密码，对应填入即可。最后填入Image URL Prefix，也就是我们刚刚记录下的那串域名，填入的时候需要在前面加上http:// 。下面的Image URL Suffix直接留空不用填。在最下面选项打对勾。然后点Validate按钮进行测试，这时候会跳出一个文件选框，你随便从电脑上选一个图片文件上传，如果跳出了下面的Success对话框，说明你的设置成功了</del></p></li>
+<li><p>为MWeb设定Markdown的CSS渲染样式<mark>这一步骤我没搞懂</mark>😅<br/>
 如果你已经熟悉了Markdown的一些基本常识，就知道Markdown跟富文本最基本的区别就是写作的时候仅仅对文字用一些脚本符号进行相关的标记，并不会进行任何格式的渲染，这样有助于写作者更加高效集中的完成写作任务，而后面美化和格式化的任务，则需要交给CSS了，CSS具体是什么我在这里不解释，你可以把它当成一个皮肤的概念，只不过这个皮肤是由一些代码规则组成的。准备好一套CSS脚本，对你写好文本中的Markdown标记进行渲染，就能达到一键美化排版的神奇效果。所以，接下来我们要做的工作就是要为MWeb设定一套日后用于发布微信公众号的CSS渲染样式。<br/>
 再次进入MWeb的首选项，点击Themes，进入如下界面：<br/>
-在这个界面找到 Preview CSS这一栏，点击旁边的Edit按钮，这时候会打开一个包含CSS文件的文件夹，我们需要做的就是把这个名为sample-css的CSS文件编辑成为我们日后想要渲染成的样子，跟我在之前两篇文章里提到的Markdown Here的渲染CSS其实是一个道理，如果你已经在使用Markdown Here并且已经有一套自己的渲染CSS脚本的话，那么这里只需要把那套脚本复制粘贴到这个CSS文件，替换掉原有的格式即可。如果你还没有的话，那么可以使用这套由半撇私塾制作的微信公众号CSS模板，也是我个人目前正在使用的一套模板，你可以通过下面的链接进入Github找到模板的源码：
-<a href="https://jarodise.com/css">https://jarodise.com/css</a>
+在这个界面找到 Preview CSS这一栏，点击旁边的Edit按钮，这时候会打开一个包含CSS文件的文件夹，我们需要做的就是把这个名为sample-css的CSS文件编辑成为我们日后想要渲染成的样子，跟我在之前两篇文章里提到的Markdown Here的渲染CSS其实是一个道理，如果你已经在使用Markdown Here并且已经有一套自己的渲染CSS脚本的话，那么这里只需要把那套脚本复制粘贴到这个CSS文件，替换掉原有的格式即可。如果你还没有的话，那么可以使用这套由半撇私塾制作的微信公众号CSS模板，也是我个人目前正在使用的一套模板，你可以通过下面的链接进入Github找到模板的源码：<br/>
+<a href="https://jarodise.com/css">https://jarodise.com/css</a><br/>
 基本上这套代码可以直接拿来使用，如果你觉得一些地方不满意的话也可以在这个基础上进行简单的修改，例如字号，颜色什么的，不过这个可能需要你有一点HTML/CSS的基础，其实也不是很难。<br/>
 完成了这一步，前期设置工作就大功告成了，这部分工作你只需要做这一次，一劳永逸。接下来编辑与发布的工作就很轻松了。<br/>
 3.编辑与发布<br/>
@@ -144,7 +154,7 @@ Name和Bucket Name，直接填写你刚刚为你的七牛云空间设定的名�
 之所以写这篇教程，是因为有太多的自媒体从业的朋友跟我抱怨，每次排版插图发布流程比码字还要浪费时间。相信学会了今天这篇教程里面的方法，你在日后的自媒体编辑工作中一定可以事半功倍，把更多的精力放在内容创作上面。<br/>
 本文系Jarod Zhang原创，如需转载请联系作者授权。坚持原创不易，你的打赏和转发是我继续创作的最大动力。<br/>
 数字游民部落致力于推广目前在全世界日益流行的数字游民（Digital Nomad）生活方式，和Lifestyle Design的方法和理念。<br/>
-摘自——————数字游民部落官网：JARODISE.COM</li>
+<mark>摘自——————数字游民部落官网：JARODISE.COM</mark></p></li>
 </ol>
 
 <h1 id="toc_1">2019-05-02 14:21:27 下午</h1>
@@ -159,7 +169,7 @@ Name和Bucket Name，直接填写你刚刚为你的七牛云空间设定的名�
 			<strong>Categories:</strong>&nbsp; 
 			<span class="categories">
 			
-			    <a class='category' href='blog.html'>blog</a>&nbsp;
+			    <a class='category' href='mweb.html'>使用Mweb遇到的问题</a>&nbsp;
 			 
 			</span>
 		    </p>
@@ -177,12 +187,12 @@ Name和Bucket Name，直接填写你刚刚为你的七牛云空间设定的名�
 
 	    <p class="meta">
 	    
-	        <a class="basic-alignment left" href="15568163246490.html" 
-	        title="Previous Post: 排骨火锅">&laquo; 排骨火锅</a>
+	        <a class="basic-alignment left" href="15567672788375.html" 
+	        title="Previous Post: 小食堂的饭">&laquo; 小食堂的饭</a>
 	    
 	    
-	        <a class="basic-alignment right" href="15567672788375.html" 
-	        title="Next Post: 小食堂的饭">小食堂的饭 &raquo;</a>
+	        <a class="basic-alignment right" href="15570294214693.html" 
+	        title="Next Post: 在你 git 发布出问题的时候">在你 git 发布出问题的时候 &raquo;</a>
 	    
 	    </p>
 	  </footer>
@@ -195,7 +205,7 @@ Name和Bucket Name，直接填写你刚刚为你的七牛云空间设定的名�
 	  <ul id="recent_posts">
 	  
 	      <li class="post">
-	        <a href="blog.html"><strong>blog&nbsp;(6)</strong></a>
+	        <a href="blog.html"><strong>blog&nbsp;(5)</strong></a>
 	        
 	        
 	        
@@ -209,7 +219,7 @@ Name和Bucket Name，直接填写你刚刚为你的七牛云空间设定的名�
 	      </li>
 	  
 	      <li class="post">
-	        <a href="mweb.html"><strong>使用Mweb遇到的问题&nbsp;(2)</strong></a>
+	        <a href="mweb.html"><strong>使用Mweb遇到的问题&nbsp;(3)</strong></a>
 	        
 	        
 	        
@@ -220,18 +230,6 @@ Name和Bucket Name，直接填写你刚刚为你的七牛云空间设定的名�
 	<section>
 	  <h1>Recent Posts</h1>
 	  <ul id="recent_posts">
-	  
-	      
-		      <li class="post">
-		        <a href="15570294214693.html">在你 git 发布出问题的时候</a>
-		      </li>
-	     
-	  
-	      
-		      <li class="post">
-		        <a href="15570293970700.html">怎样把mweb里设置好的网站菜单和文件夹关联起来</a>
-		      </li>
-	     
 	  
 	      
 		      <li class="post">
@@ -248,6 +246,18 @@ Name和Bucket Name，直接填写你刚刚为你的七牛云空间设定的名�
 	      
 		      <li class="post">
 		        <a href="15569409222965.html">一个稀松平常的4点到12点班（8小时）</a>
+		      </li>
+	     
+	  
+	      
+		      <li class="post">
+		        <a href="15568627136960.html">美女鉴赏😍</a>
+		      </li>
+	     
+	  
+	      
+		      <li class="post">
+		        <a href="15568183574917.html">随想瞎几把写</a>
 		      </li>
 	     
 	  
